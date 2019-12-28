@@ -1,10 +1,16 @@
 import numpy as np
 import pandas as pd
 import time
-from requests_oauthlib import OAuth1import numpy as np
-import pandas as pd
-import time
-from requests_oauthlib import OAuth1
+import pytumblr
+
+# Retrieve Environment Variables
+A = environ['A']
+B = environ['B']
+C = environ['C']
+D = environ['D']
+
+# Authenticate via OAuth
+client = pytumblr.TumblrRestClient(A,B,C,D)
 
 mins = 60
 hours = 60*mins
